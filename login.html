@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PLTW Cybersecurity 1 Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+      color:#fff; display:flex; align-items:center; justify-content:center;
+      height:100vh; margin:0;
+    }
+    .box {background:#1abc9c;padding:2rem;border-radius:10px;box-shadow:0 0 15px rgba(0,0,0,.3);width:320px}
+    h1 {text-align:center;margin-top:0;margin-bottom:1.5rem}
+    input {width:100%;padding:.75rem;margin:.5rem 0;border:none;border-radius:5px;font-size:1rem}
+    button {width:100%;padding:.75rem;margin-top:.5rem;font-size:1rem;
+            background:#203a43;border:none;border-radius:5px;color:#fff;cursor:pointer}
+    .error {margin-top:.75rem;color:#ffcccb;font-size:.9rem;text-align:center;min-height:1.2rem}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Class Login</h1>
+    <form id="loginForm" onsubmit="return validateLogin()">
+      <input id="user"   type="text"     placeholder="Username"  required />
+      <input id="pass"   type="password" placeholder="Password"  required />
+      <button type="submit">Enter</button>
+      <div id="msg" class="error"></div>
+    </form>
+  </div>
+
+  <script>
+    /* ---------- 1. fetch credentials once ---------- */
+    let credentials = {};
+    fetch('students.json')
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .then(data => credentials = data)
+      .catch(err => {
+        console.error('Credential file error', err);
+        document.getElementById('msg').textContent =
+          'Login system offline – contact instructor.';
+      });
+
+    /* ---------- 2. validate on submit ---------- */
+    function validateLogin () {
+      const u = document.getElementById('user').value.trim();
+      const p = document.getElementById('pass').value.trim();
+      const msg = document.getElementById('msg');
+
+      if (credentials[u] && credentials[u] === p) {
+        localStorage.setItem('loggedIn', 'true');
+        window.location.href = 'cyber-class.html';   // the main class site
+      } else {
+        msg.textContent = 'Invalid username or password.';
+      }
+      return false; // prevent form post / page reload
+    }
+  </script>
+</body>
+</html>

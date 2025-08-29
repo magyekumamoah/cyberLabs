@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Practice Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="https://cdn-icons-png.flaticon.com/512/10337/10337986.png" alt="Cybersecurity Icon" class="hero-icon"/>
+    <h1>Cybersecurity Practice Hub</h1>
+    <p>Learn by doing. Strengthen your cybersecurity skills through hands-on challenges!</p>
+  </header>
+  <main>
+    <div class="tabs">
+  <div class="tab-buttons">
+    <button class="tab-button" onclick="showTab('resources')">Student Resources</button>
+    <button class="tab-button" onclick="showTab('introLinux')">Introduction to Linux</button>
+    <button class="tab-button" onclick="showTab('domain1')">Domain 1: General Security Concepts</button>
+    <button class="tab-button" onclick="showTab('domain2')">Domain 2: Threats, Vulnerabilities, and Mitigations</button>
+    <button class="tab-button" onclick="showTab('domain3')">Domain 3: Security Architecture</button>
+    <button class="tab-button" onclick="showTab('domain4')">Domain 4: Security Operations</button>
+    <button class="tab-button" onclick="showTab('domain5')">Domain 5: Security Program Management and Oversight</button>
+  </div>
+
+  <div class="tab-content" id="resources">
+  <h2>Student Resources</h2>
+  <p>Access course syllabus, CompTIA SY0-701 Exam Objectives, Acceptable Use policy, and other support documents to help with your cybersecurity learning journey.</p>
+  <ul>
+    <li><a href="files/syllabus.pdf" target="_blank">Course Syllabus (PDF)</a></li>
+    <li><a href="files/comptia-sy0-701-objectives.pdf" target="_blank">CompTIA Security+ SY0-701 Exam Objectives (PDF)</a></li>
+    <li><a href="files/acceptable-use-policy.pdf" target="_blank">Acceptable Use Policy</a></li>
+    <li><a href="https://www.linkedin.com/in/m-a-amoah/" target="_blank">Meet Your Instructor</a></li>
+  </ul>
+</div>
+
+<div class="tab-content" id="introLinux">
+    <h2>Introduction to Linux</h2>
+    <p>This section provides flexible Linux learning paths depending on your experience level.</p>
+    <div class="cli-options">
+      <div class="cli-card">
+        <h3>Option 1: Quick Catch-Up</h3>
+        <p>Complete short, focused activities to build the Linux knowledge necessary for this course. Great for beginners joining mid-course.</p>
+        <button onclick="window.location.href='linux-catchup.html'">Start Quick Activities</button>
+      </div>
+      <div class="cli-card">
+        <h3>Option 2: Linux+ Certification Prep</h3>
+        <p>Dive into comprehensive Linux topics aligned to the CompTIA Linux+ exam. Best for students preparing for certification.</p>
+        <button onclick="alert('Linux+ prep material coming soon.')">Start In-Depth Linux Study</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="domain1">
+    <h2>Domain 1: General Security Concepts&nbsp;-12%</h2>
+    <p>This section covers the comparison of various security controls, foundational security principles, the critical role of change management in maintaining system security, and the importance of implementing appropriate cryptographic solutions to protect data and ensure secure operations.</p>
+  
+    <div class="domain-subsections">
+        <div class="subsection">
+          <h3>1.1.1 - Security Controls</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.1.1 - Security Controls - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Spanish translation/Lesson Notes/1.1.1 - Security Controls - Lesson Notes (Spanish).pdf" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Spanish translation/Guided Notes/1.1.1 - Security Controls - Guided Notes (Spanish).pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.1.1-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.2.1 - CIA Triad and AAA</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.2.1 - CIA Triad and AAA - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Spanish translation/Lesson Notes/1.2.1 - CIA Triad and AAA - Lesson Notes (Spanish).pdf" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.2.1 - CIA Triad and AAA - Guided Notes.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Spanish translation/Guided Notes/1.2.1 - CIA Triad and AAA - Guided Notes (Spanish).pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.2.1-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.2.2 - Gap Analysis and Zero Trust</h3>
+          <ul>
+            <li><a href="course_files_export/701 Files/Lesson Notes/1.2.2 - Gap Analysis and Zero Trust - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="course_files_export/701 Files/Spanish translation/Lesson Notes/1.2.2 - Gap Analysis and Zero Trust - Lesson Notes (Spanish).pdf" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="course_files_export/701 Files/Guided Notes/1.2.2 - Gap Analysis and Zero Trust - Guided Notes.pdfpdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Spanish translation/Guided Notes/1.2.2 - Gap Analysis and Zero Trust - Guided Notes (Spanish).pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.2.2-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.2.3 - Physical Security</h3>
+          <ul>
+            <li><a href="course_files_export/701 Files/Lesson Notes/1.2.3 - Physical Security - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Spanish translation/Lesson Notes/1.2.3 - Physical Security - Lesson Notes (Spanish).pdf" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.2.3 - Physical Security - Guided Notes.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Spanish translation/Guided Notes/1.2.3 - Physical Security - Guided Notes Answers (Spanish).pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.2.3-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.2.4 - Deception and Disruption Technology</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.2.4 - Deception and Disruption Technology - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Spanish translation/Lesson Notes/1.2.4 - Deception and Disruption Technology - Lesson Notes (Spanish).pdf" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.2.4 - Deception and Disruption Technology - Guided Notes.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Spanish translation/Guided Notes/1.2.4 - Deception and Disruption Technology - Guided Notes (Spanish).pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.2.4-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.3.1 - Business Processes</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.3.1 - Business Processes - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="files/1.3.1-slides.pptx" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="files/1.3.1-guided.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.3.1-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.3.2 - Technical Implications of Change Management</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.3.2 - Technical Implications of Change Management - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="files/1.3.2-slides.pptx" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="files/1.3.2-guided.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.3.2-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.3.3 - Documentation and Version Control of Change Management</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.3.3 - Documentation and Version Control of Change Management - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="files/1.3.3-slides.pptx" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="files/1.3.3-guided.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.3.3-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.4.1 - Public Key Infrastructure</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.4.1 - Public Key Infrastructure - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="files/1.4.1-slides.pptx" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="files/1.4.1-guided.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.4.1-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.4.2 - Encryption</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.4.2 - Encryption - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="files/1.4.2-slides.pptx" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="files/1.4.2-guided.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.4.2-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.4.3 - Cryptographic Tools</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.4.3 - Cryptographic Tools - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="files/1.4.3-slides.pptx" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="files/1.4.3-guided.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.4.3-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.4.4 - Obfuscation and Steganography</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.4.4 - Obfuscation and Steganography - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="files/1.4.4-slides.pptx" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="files/1.4.4-guided.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.4.4-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.4.5 - Hashing, Digital Signatures, and Blockchain</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.4.5 - Hashing, Digital Signatures, and Blockchain - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="files/1.4.5-slides.pptx" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="files/1.4.5-guided.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.4.5-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>1.4.6 - Certificates</h3>
+          <ul>
+            <li><a href="/course_files_export/701 Files/Lesson Notes/1.4.6 - Certificates - Lesson Notes.pdf" target="_blank">Lesson Notes</a></li>
+            <li><a href="files/1.4.6-slides.pptx" target="_blank">Lesson Notes-Spanish</a></li>
+            <li><a href="files/1.4.6-guided.pdf" target="_blank">Guided Notes</a></li>
+            <li><a href="/course_files_export/701 Files/Guided Notes/1.1.1 - Security Controls - Guided Notes.pdf" target="_blank">Guided Notes-Spanish</a></li>
+            <li><a href="files/1.4.6-quiz.pdf" target="_blank">Quiz</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+
+  <div class="tab-content" id="domain2">
+    <h2>Domain 2: Threats, Vulnerabilities, and Mitigations&nbsp;-22%</h2>
+    <p>Study security design principles, architecture models, and secure network components including virtualization, cloud, and on-premises setups.</p>
+  </div>
+
+  <div class="tab-content" id="domain3">
+    <h2>Domain 3: Security Architecture&nbsp;-18%</h2>
+    <p>Hands-on implementation of cybersecurity technologies such as identity management, access control, cryptography, and endpoint security.</p>
+  </div>
+
+  <div class="tab-content" id="domain4">
+    <h2>Domain 4: Security Operations&nbsp;-28%</h2>
+    <p>Learn the processes for detecting, responding to, and recovering from cybersecurity incidents. Topics include threat intelligence and digital forensics basics.</p>
+  </div>
+
+  <div class="tab-content" id="domain5">
+    <h2>Domain 5: Security Program Management and Oversight&nbsp;-20%</h2>
+    <p>Understand security governance principles, risk management strategies, and regulatory frameworks relevant to information security.</p>
+  </div>
+</div>
+</main>
+  <footer>
+    <p>© 2025 Cybersecurity Practice Hub – Built for Students</p>
+  </footer>
+  <script>
+  // Redirect to login if not authenticated
+  if (!localStorage.getItem('loggedIn')) {
+    window.location.href = 'login.html';
+  }
+</script>
+<script src="linux-cli.js"></script>
+  <script src="powershell-cli.js"></script>
+</body>
+</html>

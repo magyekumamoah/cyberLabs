@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PowerShell Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="margin: 0; padding: 1rem; background-color: #ecf0f1; color: #2c3e50; font-family: Segoe UI, sans-serif;">
+  <h2>PowerShell Practice Environment</h2>
+  <p>Try common PowerShell commands in this simulated environment:</p>
+  <div class="cli-card">
+    <div class="terminal-simulator" id="ps-output"></div>
+    <input
+      type="text"
+      class="terminal-input"
+      id="ps-input"
+      placeholder="Type a PowerShell command..."
+      onkeydown="handlePSTerminalInput(event)"
+    />
+  </div>
+  <script src="powershell-cli.js"></script>
+</body>
+</html>

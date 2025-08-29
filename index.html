@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Practice Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="https://cdn-icons-png.flaticon.com/512/10337/10337986.png" alt="Cybersecurity Icon" class="hero-icon"/>
+    <h1>Cybersecurity Practice Hub</h1>
+    <p>Learn by doing. Strengthen your cybersecurity skills through hands-on challenges!</p>
+  </header>
+  <main>
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-button" onclick="showTab('linux')">Linux CLI</button>
+        <button class="tab-button" onclick="showTab('powershell')">PowerShell</button>
+        <button class="tab-button" onclick="showTab('keylogger')">Keylogger</button>
+        <button class="tab-button" onclick="showTab('mfa')">MFA</button>
+        <button class="tab-button" onclick="showTab('pki')">PKI</button>
+        <button class="tab-button" onclick="showTab('vocab')">Vocabulary</button>
+        <button class="tab-button" onclick="showTab('practiceTest')">Sec+ Test</button>
+        <button class="tab-button" onclick="showTab('crypto')">Cryptography</button>
+        <button class="tab-button" onclick="showTab('labs')">Labs</button>
+        <button class="tab-button" onclick="showTab('extras')">Extras</button>
+      </div>
+
+      <div class="tab-content" id="linux">
+        <h2>Linux CLI Practice Options</h2>
+        <p>Select an option below to start practicing:</p>
+        <div class="cli-options">
+          <div class="cli-card">
+            <h3>Option 1: In-Browser Bash Simulator</h3>
+            <p>Use a simulated Bash shell powered by JavaScript. Great for trying out basic Linux commands without installing anything.</p>
+            <div class="terminal-simulator" id="terminal-output"></div>
+            <input type="text" class="terminal-input" id="terminal-input" placeholder="Type a command..." onkeydown="handleTerminalInput(event)" />
+          </div>
+          <div class="cli-card">
+            <h3>Option 2: Connect to Live Bash Terminal</h3>
+            <p>Connect to a remote Linux environment for a real bash experience (requires authentication and network access).</p>
+            <button onclick="alert('Live bash access coming soon.')">Connect to Terminal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="powershell">
+        <object type="text/html" data="powershell.html" width="100%" height="400px" style="border:none;"></object>
+      </div>
+
+      <div class="tab-content" id="keylogger">Keylogger simulation (educational and safe).</div>
+      <div class="tab-content" id="mfa">Interactive MFA demonstration module.</div>
+      <div class="tab-content" id="pki">PKI walkthrough and activities.</div>
+      <div class="tab-content" id="vocab">Cybersecurity vocabulary activities.</div>
+      <div class="tab-content" id="practiceTest">Sec+ 701 practice questions.</div>
+      <div class="tab-content" id="crypto">Cryptography exercises and challenges.</div>
+      <div class="tab-content" id="labs">Interactive labs aligned with Sec+ objectives.</div>
+      <div class="tab-content" id="extras">
+        <ul>
+          <li>Phishing email identification game</li>
+          <li>Cybersecurity trivia game</li>
+          <li>VM-based ethical hacking lab</li>
+          <li>Cybersecurity career quiz</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 Cybersecurity Practice Hub – Built for Students</p>
+  </footer>
+  <script src="linux-cli.js"></script>
+  <script src="powershell-cli.js"></script>
+</body>
+</html>
